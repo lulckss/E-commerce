@@ -5,6 +5,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Autoplay } from "swiper/modules";
 import { ChevronRight, ChevronLeft } from "lucide-react";
 import Link from "next/link";
+import Image from "next/image";
 
 // Importando estilos do Swiper
 import "swiper/css";
@@ -78,7 +79,7 @@ const Brands2 = () => {
           {products.map((product) => (
             <SwiperSlide key={product.id}>
               <div className="flex justify-center items-center container w-[450px] lg:w-[450px] h-full object-cove rounded-xl ">
-                <img
+                <Image width={500} height={500}
                   src={product.image}
                   alt={product.name}
                   className="w-full h-full object-cover rounded-3xl"

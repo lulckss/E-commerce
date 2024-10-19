@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import { FaWhatsapp } from "react-icons/fa";
@@ -61,7 +62,7 @@ const ContactInfoItem = ({ iconClass, label, contact }) => (
 );
 
 const AppDownloadItem = ({ src, alt }) => (
-  <img src={src} alt={alt} className="h-12" />
+  <Image width={150} height={500} src={src} alt={alt} className="h-12" />
 );
 
 const List = ({ items }) => (

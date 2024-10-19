@@ -122,7 +122,7 @@ const Card = ({
           </h2>
 
           {/* Segunda linha de texto */}
-          <p className="text-sm text-gray-600 dark:text-white borde font-bold mt-2">
+          <p className="text-lg text-gray-600 dark:text-white borde font-bold mt-2">
             {value} <s className="font-normal ml-2">{discount}</s>
           </p>
 

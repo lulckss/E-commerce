@@ -5,6 +5,7 @@ import React from "react";
 import Link from "next/link";
 import { Award } from "lucide-react";
 import { ChevronRight } from "lucide-react";
+import Image from "next/image";
 
 const categories = [
   {
@@ -63,7 +64,7 @@ const CategoryItem = ({ name, imgSrc, borderColor, imgWidth, imgHeight }) => (
     <div
       className={`w-36 h-36 rounded-full border-2 ${borderColor} flex items-center justify-center mb-2 shadow-custom-spread bg-gray-200 dark:bg-neutral-800 hover:border-accent`}
     >
-      <img src={imgSrc} alt={name} className={`${imgWidth} ${imgHeight}`} />
+      <Image width={500} height={500} src={imgSrc} alt={name} className={`${imgWidth} ${imgHeight}`} />
     </div>
     <p className="text-base font-medium">{name}</p>
   </div>
@@ -85,8 +86,8 @@ const SectionCategories = () => {
         </div>
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 xl:grid-cols-7">
           {categories.map((category, index) => (
-            <Link href="#">
-              <CategoryItem key={index} {...category} />
+            <Link key={index} href="#">
+              <CategoryItem {...category} />
             </Link>
           ))}
         </div>

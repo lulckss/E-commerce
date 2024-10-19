@@ -1,4 +1,5 @@
 import { ChevronRight } from "lucide-react";
+import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
@@ -61,7 +62,10 @@ const Essentials = () => {
         <h1 className="text-2xl text-primary dark:text-white/85 font-semibold border-b-2 border-accent">
           Daily <span className="text-accent">Essentials</span>
         </h1>
-        <Link href="#" className="flex items-center justify-center font-medium text-base">
+        <Link
+          href="#"
+          className="flex items-center justify-center font-medium text-base"
+        >
           View All
           <ChevronRight className="text-accent" />
         </Link>
@@ -74,7 +78,7 @@ const Essentials = () => {
         ))}
       </div>
     </div>
-     );
+  );
 };
 
 const EssentialItem = ({
@@ -87,7 +91,9 @@ const EssentialItem = ({
 }) => (
   <Link href="#">
     <div className="flex flex-col justify-center items-center bg-gray-200 dark:bg-neutral-700 rounded-lg shado-lg p-5 border dark:border-gray-900 dark:hover:border-accent hover:border-accent">
-      <img
+      <Image
+        width={500}
+        height={500}
         src={imgSrc}
         alt={alt}
         className={`object-contain ${imgWidth} ${imgHeight} mb-4`}
@@ -95,11 +101,11 @@ const EssentialItem = ({
       <h2 className="text-sm font-semibold text-primary dark:text-white/85 mb-2">
         {name}
       </h2>
-      <p className="text-[21px] lg:text-lg sm:text-base md:text-base font-bold text-black mb-4">{discount}</p>
+      <p className="text-[21px] lg:text-lg sm:text-base md:text-base font-bold text-black mb-4">
+        {discount}
+      </p>
     </div>
   </Link>
 );
 
-
- 
 export default Essentials;

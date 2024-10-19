@@ -103,7 +103,7 @@ const AsideNav = () => {
         </nav>
 
         {/* Rodapé do menu */}
-        <footer className="mt-[140px] border-t-2 dark:border-t-gray-800 pt-4">
+        <footer className="mt-[130px] border-t-2 dark:border-t-gray-800 pt-4">
           <p className="text-sm text-primary dark:text-white/85">
             © 2024 AllMart. All rights reserved.
           </p>

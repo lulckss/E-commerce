@@ -70,7 +70,7 @@ const items = [
 
 const SectionNav = () => {
   return (
-    <div className="border-y dark:border-gray-800 hidden 2xl:flex flex-wrap justify-center space-x-4">
+    <div className="border-y dark:border-gray-800 hidden 2xl:flex flex-wrap justify-center ml-28">
       {items.map((item, index) => (
         <div
           key={index}
