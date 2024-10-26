@@ -46,9 +46,6 @@ const Header = () => {
           </div>
         </Link>
       </div>
-      <div className="hidde absolute right-0 top-0 mt-1 mr-2">
-          <ThemeToggle />
-        </div>
     </header>
   );
 };

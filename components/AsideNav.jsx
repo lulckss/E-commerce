@@ -1,5 +1,7 @@
 "use client";
 
+import ThemeToggle from "./ThemeToggle";
+
 import {
   Sheet,
   SheetContent,
@@ -66,6 +68,10 @@ const AsideNav = () => {
         side="left"
         className="bg-white p-6 text-gray-800 sm:w-[75%] md:w-[60%] lg:w-[40%] border-2 border-accent"
       >
+        <div className="absolute mt-[800px]">
+          <ThemeToggle />
+        </div>
+
         {/* Cabeçalho do menu */}
         <SheetHeader className="border-b-2 dark:border-b-gray-800 mb-4">
           <SheetTitle className="text-3xl font-bold text-accent dark:text-accent">
